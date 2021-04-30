@@ -7,6 +7,12 @@ var turno = 1;
 var total_tiro2;
 var punto;
 
+function playSong(){
+	var audio = document.getElementById(winSound);
+	audio.play();
+
+}
+
 window.onload = init;
 
 function init(){
@@ -44,6 +50,8 @@ function jugar(){
 		alert("Gano la partida");
 		turno = 1;
 		console.log("Se reinicio el turno");
+		playSong(winSound);
+
 	}
 
 	if(total_tiro==2|| total_tiro==3|| total_tiro==12)
