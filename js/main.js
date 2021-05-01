@@ -21,7 +21,7 @@ function init(){
 
 	dado1 = document.getElementById("dado1");
 	dado2 = document.getElementById("dado2");
-
+	cerrar.addEventListener("click",cerrarVentana);
 }
 
 function tirardado(){
@@ -47,7 +47,7 @@ function jugar(){
 	{
 		if(total_tiro==7 || total_tiro==11)
 	{
-		alert("Gano la partida");
+		mostrarMensaje("Gano la partida");
 		turno = 1;
 		console.log("Se reinicio el turno");
 		playSong(winSound);
@@ -56,7 +56,7 @@ function jugar(){
 
 	if(total_tiro==2|| total_tiro==3|| total_tiro==12)
 	{
-		alert("Perdió la partida");
+		mostrarMensaje("Perdió la partida");
 		turno = 1;
 		console.log("Se reinicio el turno");
 	}
@@ -81,17 +81,34 @@ function jugar(){
 
 		if (total_tiro2==7)
 		{
-			alert("Perdió la partida");
+			mostrarMensaje("Perdió la partida");
 			turno = 1;
 			console.log("Se reinicio el turno");
 		}
 		
 	if (total_tiro2==punto)
 	{
-		alert("Gano la partida");
+		mostrarMensaje("Gano la partida");
 		turno = 1;
 		console.log("Se reinicio el turno");
 	}
 
 	}
+}
+
+function mostrarMensaje(mensaje){
+	mensaje_texto.innerHTML = mensaje;
+	abrirVentana();
+}
+
+
+
+function abrirVentana(){
+	ventana.className = "ligthbox animate__animated animate__fadeIn";
+}
+
+
+
+function cerrarVentana(){
+	ventana.className = "ligthbox hidden";
 }
