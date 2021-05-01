@@ -1,5 +1,47 @@
-body{
-	background-color: darkcyan;
+body
+{
+    background-image: url('https://media.giphy.com/media/65Ehp0SVELsVqYhyJT/giphy.gif');
+    background-size: cover;
+    
+    
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+    font-family: bahnschrift;
+}
+.center{
+	
+
+}
+
+		/* Texto supuestamente animado con color */
+h1{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 6em;
+	color: transparent;
+	text-transform: all;
+	background-image: linear-gradient(to right , #f00,#ff0,#0ff,#0f0,#00f);
+	-webkit-background-clip: text;
+	animation: animate 20s linear infinite;
+	background size: 100%
+}
+@keyframes animate
+{
+	0%
+	{
+		background-position: 0% 100%
+	}
+	50%
+	{
+		background-position: 100% 0%
+	}
+	100%
+	{
+		background-position: 0% 100%
+	}
 }
 
 .dado{
@@ -13,7 +55,7 @@ body{
 	width:315px;
 	margin:0 auto;
 }
-
+	/* Boton animado */
 #boton_tirar{
 	padding: 15px 25px;
   font-size: 24px;
@@ -21,17 +63,16 @@ body{
   cursor: pointer;
   outline: none;
   color: #fff;
-  background-color: #04AA6D;
+  background-color: #0087FF;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
   position: relative;
-  left: 890px;
-  right: -890px;
-  top: 300px;
+  left: 690px;
+  top: 180px;
    }
 
-#boton_tirar:hover {background-color: #3e8e41}
+#boton_tirar:hover {background-color: #0032FF}
 
 #boton_tirar:active {
   background-color: #3e8e41;
