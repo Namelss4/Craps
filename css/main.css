@@ -88,6 +88,7 @@ header .elementos-header{
 .contenedor-reglas{
     display: flex;
     justify-content: space-evenly;
+	background: #ff9191;
 }
 
 .imagen-reglas{
@@ -122,4 +123,59 @@ header .elementos-header{
     padding: 0px 0px 30px 15px;
     font-weight: 300;
     text-align: justify;
+}
+
+/* Provicional */
+
+.provisonal{
+    background: #f2f2f2;
+}
+
+.marco-prv{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-prv{
+    width: 40%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    
+}
+
+.imagen-prv > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-imagen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(202, 21, 21, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-imagen img{
+    width: 50px;
+}
+
+.hover-imagen p{
+    color: #fff;
+}
+
+.imagen-prv:hover .hover-imagen{
+    transform: scale(1);
 }
