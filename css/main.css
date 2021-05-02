@@ -10,10 +10,7 @@ body
     margin:0;
     font-family: bahnschrift;
 }
-.center{
-	
-
-}
+/*.center{}*/
 
 		/* Texto supuestamente animado con color */
 h1{
@@ -26,8 +23,9 @@ h1{
 	background-image: linear-gradient(to right , #f00,#ff0,#0ff,#0f0,#00f);
 	-webkit-background-clip: text;
 	animation: animate 20s linear infinite;
-	background size: 100%
+	background-size: 100%
 }
+
 @keyframes animate
 {
 	0%
