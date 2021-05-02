@@ -82,3 +82,44 @@ header .elementos-header{
     bottom: 0;
     width: 100%;
 }
+
+/* Reglas */
+
+.contenedor-reglas{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-reglas{
+    width: 48%;
+   /* height: auto;
+    max-width: 100px;
+    max-height: 100px;*/
+}
+
+.reglas .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: crimson;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
