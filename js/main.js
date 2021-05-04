@@ -6,10 +6,12 @@ var total_tiro;
 var turno = 1;
 var total_tiro2;
 var punto;
+var audioWin = new Audio('C:/Users/juanp/Desktop/UPB/Intro Ing SW/craps/sound/yay.mp3');
+var audioLost = new Audio("C:/Users/juanp/Desktop/UPB/Intro Ing SW/craps/sound/bruh.mp3")
 
 function playSong(){
 	var audio = document.getElementById(winSound);
-	audio.play();
+	audioWin.play();
 
 }
 
@@ -50,7 +52,7 @@ function jugar(){
 		mostrarMensaje("Gano la partida");
 		turno = 1;
 		console.log("Se reinicio el turno");
-		playSong(winSound);
+		audioWin.play();
 
 	}
 
@@ -59,6 +61,7 @@ function jugar(){
 		mostrarMensaje("Perdió la partida");
 		turno = 1;
 		console.log("Se reinicio el turno");
+		audioLost.play();
 	}
 
 	if (total_tiro==4 || total_tiro==5 || total_tiro==6 || total_tiro==8 || total_tiro==9 || total_tiro==10)
@@ -84,6 +87,7 @@ function jugar(){
 			mostrarMensaje("Perdió la partida");
 			turno = 1;
 			console.log("Se reinicio el turno");
+			audioLost.play();
 		}
 		
 	if (total_tiro2==punto)
@@ -91,6 +95,7 @@ function jugar(){
 		mostrarMensaje("Gano la partida");
 		turno = 1;
 		console.log("Se reinicio el turno");
+		audioWin.play();
 	}
 
 	}
