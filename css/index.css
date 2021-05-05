@@ -25,7 +25,6 @@ header {
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    ;
 }
 
 nav{
@@ -71,6 +70,8 @@ header .elementos-header{
     width: 100%;
 }
 
+/*main*/
+
 main
 {
     background-image: url('https://media.giphy.com/media/65Ehp0SVELsVqYhyJT/giphy.gif');
@@ -81,9 +82,18 @@ main
     font-family: bahnschrift;
 }
 
+.juego{
+	display: flex;
+	flex-direction: column;
+		
+}
+
+.contenedor-rainbow{
+	padding-top: 60px;
+	
+}
 
 /*.center*/
-
 		/* Texto animado con color */
 .rainbow{
 	margin: 0;
@@ -96,7 +106,6 @@ main
 	-webkit-background-clip: text;
 	animation: animate 20s linear infinite;
 	background-size: 1000%
-
 }
 
 @keyframes animate
@@ -115,6 +124,13 @@ main
 	}
 }
 
+.contenedor-rainbow{
+	padding: 60px;
+	border: #000000;
+	margin: auto;
+
+}
+
 .dado{
 	background-image:url(https://i.pinimg.com/originals/0b/61/ba/0b61ba096406865f0e76a9b07e36dc69.png);
 	background-position:-803px;
@@ -130,20 +146,19 @@ main
 #boton_tirar{
 	padding: 15px 25px;
   font-size: 24px;
-  text-align: center;
+  align-items: center;
   cursor: pointer;
   outline: none;
   color: #fff;
-  background-color: #0087FF;
+  background-color: #ff0000;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
-  position: relative;
-  left: 690px;
-  top: 180px;
+  position: absolute;
+  margin: 500px;
    }
 
-#boton_tirar:hover {background-color: #0032FF}
+#boton_tirar:hover {background-color: #b60000}
 
 #boton_tirar:active {
   background-color: #3e8e41;
@@ -219,4 +234,47 @@ main
 .close_button:hover{
 	background-color: white;
 	color: #0081a7;
+	}
+
+/* footer */
+
+.footer{
+    color: solid rgb(44, 43, 43);
+	}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(255, 0, 0);
+	}
+
+.contenido{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+	}
+
+.contenido h4{
+    color: rgb(0, 0, 0);
+    border-bottom: 3px solid #910a0a;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+	}
+
+.contenido p{
+    color: rgb(160, 136, 136);
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 20px;
+	}
+
+.titulo-final{
+    color: rgb(255, 0, 0);
+    border-bottom: 3px solid #000000;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
 	}
