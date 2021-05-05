@@ -84,18 +84,19 @@ main
 
 /*.center*/
 
-		/* Texto supuestamente animado con color */
-h1{
+		/* Texto animado con color */
+.rainbow{
 	margin: 0;
 	padding: 0;
 	text-align: center;
 	font-size: 6em;
 	color: transparent;
 	text-transform: all;
-	background-image: linear-gradient(to right , #f00,#ff0,#0ff,#0f0,#00f);
+	background-image: linear-gradient(to right , rgb(255, 0, 0),rgb(255, 112, 112),rgb(255, 255, 255),rgb(124, 0, 0),rgb(0, 0, 0));;
 	-webkit-background-clip: text;
 	animation: animate 20s linear infinite;
-	background-size: 100%
+	background-size: 1000%
+
 }
 
 @keyframes animate
