@@ -70,6 +70,14 @@ header .elementos-header{
     width: 100%;
 }
 
+	/* Color rojo en los dados */
+	#demobox{
+		background-color: #ff00003d;
+		padding: 432px;
+		margin-top: -500px;
+		border: none;
+	}
+
 /*main*/
 
 main
@@ -96,6 +104,7 @@ main
 /*.center*/
 		/* Texto animado con color */
 .rainbow{
+	
 	margin: 0;
 	padding: 0;
 	text-align: center;
@@ -106,6 +115,7 @@ main
 	-webkit-background-clip: text;
 	animation: animate 20s linear infinite;
 	background-size: 1000%
+
 }
 
 @keyframes animate
@@ -134,6 +144,7 @@ main
 .dado{
 	background-image:url(https://i.pinimg.com/originals/0b/61/ba/0b61ba096406865f0e76a9b07e36dc69.png);
 	background-position:-803px;
+	color: black;
 	width:157px;
 	height:156px;
 }
@@ -150,18 +161,19 @@ main
   cursor: pointer;
   outline: none;
   color: #fff;
-  background-color: #ff0000;
+  background-color: #f00000;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
+  box-shadow: 0 6px #999;
   position: absolute;
-  margin: 500px;
+  margin-top: 100px;
+  margin-left: 590px;
    }
 
 #boton_tirar:hover {background-color: #b60000}
 
 #boton_tirar:active {
-  background-color: #3e8e41;
+  background-color: #ff2020;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -278,3 +290,4 @@ main
     margin-bottom: 15px;
     text-align: center;
 	}
+

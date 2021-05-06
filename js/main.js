@@ -7,13 +7,8 @@ var turno = 1;
 var total_tiro2;
 var punto;
 var audioWin = new Audio('C:/Users/juanp/Desktop/UPB/Intro Ing SW/craps/sound/yay.mp3');
-var audioLost = new Audio("C:/Users/juanp/Desktop/UPB/Intro Ing SW/craps/sound/bruh.mp3")
+var audioLost = new Audio("C:/Users/juanp/Desktop/UPB/Intro Ing SW/craps/sound/bruh.mp3");
 
-function playSong(){
-	var audio = document.getElementById(winSound);
-	audioWin.play();
-
-}
 
 window.onload = init;
 
@@ -53,7 +48,6 @@ function jugar(){
 		turno = 1;
 		console.log("Se reinicio el turno");
 		audioWin.play();
-
 	}
 
 	if(total_tiro==2|| total_tiro==3|| total_tiro==12)
