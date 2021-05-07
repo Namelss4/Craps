@@ -44,7 +44,7 @@ function jugar(){
 	{
 		if(total_tiro==7 || total_tiro==11)
 	{
-		mostrarMensaje("Gano la partida");
+		mostrarMensaje("Ganó la partida");
 		turno = 1;
 		console.log("Se reinicio el turno");
 		audioWin.play();
@@ -86,7 +86,7 @@ function jugar(){
 		
 	if (total_tiro2==punto)
 	{
-		mostrarMensaje("Gano la partida");
+		mostrarMensaje("Ganó la partida");
 		turno = 1;
 		console.log("Se reinicio el turno");
 		audioWin.play();
