@@ -6,18 +6,16 @@ var total_tiro;
 var turno = 1;
 var total_tiro2;
 var punto;
-var ganar,perder,id_ganar;
 
 window.onload = init;
 
 function init(){
 	boton_tirar = document.getElementById("boton_tirar");
 	boton_tirar.addEventListener("click",jugar);
+
 	dado1 = document.getElementById("dado1");
 	dado2 = document.getElementById("dado2");
 	cerrar.addEventListener("click",cerrarVentana);
-	ganar = new Howl({​​​​​src: ["./sound/yay.mp3"]}​​​​​);
-	perder = new Howl({​​​​​src: ["./sound/bruh.mp3"]}​​​​​);
 }
 
 function tirardado(){
@@ -44,15 +42,14 @@ function jugar(){
 		if(total_tiro==7 || total_tiro==11)
 	{
 		mostrarMensaje("Ganó la partida");
-		ganar.play();
 		turno = 1;
 		console.log("Se reinicio el turno");
+		audioWin.play();
 	}
 
 	if(total_tiro==2|| total_tiro==3|| total_tiro==12)
 	{
 		mostrarMensaje("Perdió la partida");
-		perder.play();
 		turno = 1;
 		console.log("Se reinicio el turno");
 		audioLost.play();
@@ -79,20 +76,20 @@ function jugar(){
 		if (total_tiro2==7)
 		{
 			mostrarMensaje("Perdió la partida");
-			perder.play();
 			turno = 1;
 			console.log("Se reinicio el turno");
+			audioLost.play();
 		}
 		
 	if (total_tiro2==punto)
 	{
 		mostrarMensaje("Ganó la partida");
-		ganar.play();
 		turno = 1;
 		console.log("Se reinicio el turno");
+		audioWin.play();
 	}
 
-
+	}
 }
 
 function mostrarMensaje(mensaje){
@@ -110,5 +107,4 @@ function abrirVentana(){
 
 function cerrarVentana(){
 	ventana.className = "ligthbox hidden";
-	}
 }
