@@ -27,7 +27,7 @@ body{
 
 header {
     width: 100%;
-    height: 600px;
+    height: 550px;
      background: #000000;  
      /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, hsla(6, 78%, 57%, 0.57), hsla(0, 0%, 0%, 0.57)), url(../img/portada4.jpg);  

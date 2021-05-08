@@ -4,18 +4,30 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
 .titulo {
     color: #e11010;
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
-}
+    }
 
 /* Header */
 
 header {
     width: 100%;
-    height: 500px;
+    height: 550px;
      background: #000000;  
      /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, hsla(6, 78%, 57%, 0.57), hsla(0, 0%, 0%, 0.57)), url(../img/portada4.jpg);  
@@ -70,17 +82,24 @@ header .elementos-header{
     width: 100%;
 }
 
+/*espaciado*/
+
+.relleno{
+	height: 50px;
+}
+
 	/* Color rojo en los dados */
-	#demobox{
-		background-color: #ff00003d;
-		padding: 432px;
-		margin-top: -500px;
-		border: none;
-	}
+
+#demobox{
+	background-color: #ff00003d;
+	padding: 293px;
+	margin-top: -390px;
+	border: none;
+}
 
 /*main*/
 
-main
+.juego
 {
     background-image: url('https://media.giphy.com/media/65Ehp0SVELsVqYhyJT/giphy.gif');
     background-size: cover;
@@ -88,12 +107,10 @@ main
     padding:0;
     margin:0;
     font-family: bahnschrift;
-}
-
-.juego{
 	display: flex;
 	flex-direction: column;
-		
+}
+	
 }
 
 .contenedor-rainbow{
